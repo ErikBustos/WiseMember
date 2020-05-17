@@ -1,0 +1,14 @@
+<form [formGroup]="formulario" (ngSubmit)="submit()">
+    <div class="text-center jumbotron container">
+            <h6 class="display-4">Upload your notes</h6>
+            <p class="lead">Upload your clippings file from your Kindle</p>
+            <hr class="my-4">
+            <p>You are one step from unlimited knowledge</p>
+            <br>
+        <input 
+        formControlName="file"
+        type="file" name="clipping" id="clipping"
+        (change)="onFileChange($event)">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>

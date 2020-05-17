@@ -1,0 +1,63 @@
+
+<form action="/uploadClipping" method="POST" enctype="multipart/form-data">
+    <input type="file" name="clipping" id="clipping">
+    <input type="submit" class="btn btn-primary" value="submit" name="submit">
+</form>
+
+<form action="/posttest" method="POST" enctype="multipart/form-data">
+    <div class="text-center jumbotron container">
+        <h6 class="display-4">Upload your notes</h6>
+        <p class="lead">Upload your clippings file from your Kindle</p>
+        <hr class="my-4">
+        <p>You are one step from unlimited knowledge</p>
+        <br>
+        <label>
+            <input type="file" class="form-control-file" name="clipping" id="clipping">
+            <!-- <button type="submit" class="btn btn-primary btn-lg">Upload</button> -->
+            <button href="#" type="submit" class="btn btn-primary btn-lg">Upload</button>
+            <input type="submit" class="btn btn-primary" value="submit" name="submit">
+            <a type="submit" class="btn btn-primary" >submit</a>
+        </label>
+
+    </div>
+</form>
+
+<div class="text-center jumbotron container">
+    <h6 class="display-4">Upload your notes</h6>
+    <p class="lead">Upload your clippings file from your Kindle</p>
+    <hr class="my-4">
+    <p>You are one step from unlimited knowledge</p>
+    <br>
+    <label>
+        <input type="file" name="clipping" ng2FileSelect [uploader]="uploader"
+        (onFileSelected)="onFileSelected($event)"/>
+        <button type="button" class= "btn btn-primary btn-lg"
+            (click) = "uploader.uploadAll()">Submit</button>
+    </label>
+
+</div>
+
+<!-- <form action="/uploadClipping" method="POST" enctype="multipart/form-data">
+    <div class="text-center jumbotron container">
+        <h6 class="display-4">Upload your notes</h6>
+        <p class="lead">Upload your clippings file from your Kindle</p>
+        <hr class="my-4">
+        <p>You are one step from unlimited knowledge</p>
+        <br>
+        <label>
+            <input type="file" class="form-control-file" name="clipping" id="clipping">
+            <!-- <button type="submit" class="btn btn-primary btn-lg">Upload</button> 
+            <button href="#" type="submit" class="btn btn-primary btn-lg">Upload</button>
+            <input type="submit" class="btn btn-primary" value="submit" name="submit">
+            <a type="submit" class="btn btn-primary" >submit</a>
+        </label>
+
+    </div>
+</form> -->
+
+<!-- <form action="/upload_cloud" method="POST" enctype="multipart/form-data">
+    <label for="formGroupExampleInput">Description</label>
+    <input type="text" class="form-control" name="description" placeholder="Put here a description of your image">
+    <input type="file" name= "image">
+    <button href="#" class="btn btn-primary my-2" onclick="uploadImage()">Upload</button>
+</form> -->

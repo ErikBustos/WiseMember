@@ -1,0 +1,53 @@
+.Mysidebar{
+    padding: 1.5em;
+    overflow-y: scroll;
+    max-height: 100vh;
+    scrollbar-color: #393e46 #eeeeee;
+    scrollbar-width: thin;
+}
+
+.container{
+    width: 97%
+}
+
+.MyNotesContainer{
+    overflow-y: scroll;
+    max-height: 100vh;
+    scrollbar-color: #393e46 #eeeeee;
+    scrollbar-width: thin;
+}
+
+.Mybook-img{
+    margin-left: 35%;
+    align-content: center;
+    width: 77.3px;
+    height: 121.283px;
+}
+
+.myTitle{
+    font-size: x-large;
+    text-align: center;
+}
+
+.cardBody{
+    margin: 2em;
+}
+
+.myquote{
+    border-top: 1px solid #d3d4d8;
+    text-align: center;
+    padding: .6em;
+    font-size: 1.6em;
+    font-family: 'Amatic SC', cursive;
+    color: #233142;
+}
+
+.textCenter{
+    text-align: center;
+    border-bottom: 1px solid #d3d4d8;
+}
+
+
+/* font- families
+font-family: 'Permanent Marker', cursive; 1.1em
+font-family: 'Amatic SC', cursive; 1.6em*/  

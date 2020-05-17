@@ -1,0 +1,18 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Homemade+Apple|Kaushan+Script|Permanent+Marker|Rock+Salt|Waiting+for+the+Sunrise|Walter+Turncoat&display=swap');
+</style> 
+
+<h6 class = "myTitle">My notes</h6>
+
+<div *ngFor="let c of searchRes" class= "card">
+    <div class = "cardBody ">      
+        <h6 class="card-subtitle mb-2 text-muted">{{c.date}}  |  position {{c.position}} </h6>
+        <p class="myquote"> {{c.quote}} </p>
+        <footer class="blockquote-footer textCenter"> {{c.author}} in
+            <cite title="source Title"> {{c.book}}</cite>
+        </footer>
+
+        <!-- <a href="#" class="card-link">Share note</a> -->
+    </div>
+
+</div>

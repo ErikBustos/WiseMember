@@ -1,0 +1,40 @@
+
+  <h5 class ="col-xs-1 text-center">My Books</h5>
+  <!--searchbar-->
+  <form class="form-inline my-2 my-lg-0 searchbar">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search your book" aria-label="Search"
+        [(ngModel)]= "searchInput"
+        (keydown.enter) = "search()"
+        name="bookSearch">
+      <button class ="btn btn-dark" type="submit"><i class="fa fa-search "></i></button>
+      <p *ngIf="searchInput.length > 0">searching: {{searchInput}}</p>
+    </form>
+    <!--books Card-->
+    <div *ngFor="let b of searchRes" class="card" style="width: 18rem;">
+        <img src = {{b.imageUrl}} class ="Mybook-img">
+        <div class="card-body">
+          <h5 class="card-title">{{b.title}}</h5>
+          <p class="card-text">By: {{b.author}}</p>
+        </div> 
+    </div>
+<!-- <div class="sidebar-wrapper">
+    <div class="logo">
+      <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+        <div class="logo-image-small">
+          <img src="assets/img/angular2-logo.png">
+        </div>
+      </a>
+      <a href="https://www.creative-tim.com" class="simple-text logo-normal">
+        Creative Tim
+      </a>
+    </div>
+      <ul class="nav">
+          <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+              <a [routerLink]="[menuItem.path]">
+                  <i class="nc-icon {{menuItem.icon}}"></i>
+                  <p>{{menuItem.title}}</p>
+              </a>
+          </li>
+      </ul>
+  </div>
+   -->
